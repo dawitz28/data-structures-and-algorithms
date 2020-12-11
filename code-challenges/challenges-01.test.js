@@ -13,8 +13,6 @@ const greeting = (word) => {
   return word.toUpperCase();
   }
 
-
-
 const speaker = (message, callback) => {
   // Solution code here...
   return callback(message);
@@ -70,8 +68,20 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+
+  let inventory = [];
+  const createList = (availableItems) => {
+    availableItems.forEach(item => {
+      if(item.available === true){
+        itemList.push(item.name);
+      }
+    }
+    return itemList;
+  });
 };
 
+
+    
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -88,6 +98,17 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+};
+const fizzbuzz =(arr) => {
+  arr.forEach( item =>{
+    if (item % 3 === 0 && item % 5 === 0){
+      item = "Fizz Buzz";
+    }else if (item % 3 === 0){
+      item = "Fizz";
+    }else if (item % 5 === 0){
+      item = "Buzz";
+    }
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
