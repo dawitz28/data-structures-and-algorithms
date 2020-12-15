@@ -168,3 +168,18 @@ xdescribe('Testing challenge 6', () => {
     expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
   });
 });
+
+
+// $('.filter').on('click', function(){
+//   let value = this.value;
+
+//   let $allImagesValue = $('img');
+
+//   for (let i=0; i <$allImagesValue.length; i++){
+//     if($allImagesValue[i]).alt !== value) {
+//       $($allImagesValue[i]).hide();
+//     } else if ( $allImagesValue[i].alt === value){
+//       $($allImagesValue[i]).show();
+//     }
+//   }
+// })
