@@ -4,9 +4,9 @@
 const cheerio = require('cheerio');
 
 // ------------------------------------------------------------------------------------------------
-CHALLENGE 1 - Review
+// CHALLENGE 1 - Review
 
-Without altering the html, write a function named generateSubmitButton that uses jQuery to create a submit button with the text "submit" and append it to the DOM.
+// Without altering the html, write a function named generateSubmitButton that uses jQuery to create a submit button with the text "submit" and append it to the DOM.
 // ------------------------------------------------------------------------------------------------ */
 let $ = createSnippetWithJQuery(`
 <section>
@@ -29,16 +29,16 @@ const generateSubmitButton = () => {
 };
 
   // ------------------------------------------------------------------------------------------------
-CHALLENGE 2
+// CHALLENGE 2
 
-Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
+// Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
 
-For example:
-12345 returns true
-'12345' returns true
-'h3llo world' returns true
-'hello world' returns false
------------------------------------------------------------------------------------------------- */
+// For example:
+// 12345 returns true
+// '12345' returns true
+// 'h3llo world' returns true
+// 'hello world' returns false
+// ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
   // Solution code here...
