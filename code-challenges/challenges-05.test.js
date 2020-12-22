@@ -37,20 +37,21 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templateWithJQuery = () => {
-  // Solution code here...
-  let template = $('#template').clone();
+  let $sectionTemplate = $('#template');
+
   starWarsPeople.forEach(value => {
-    let newSection= sectionTemplate.clone();
-    let name = template.find('h2');
-    let height = template.find('h3');
-    let eyecolor = template.find('p');
+    let $newSection= 
+    $sectionTemplate.clone();
+    let $name = $newSection.find('h2');
+    let $height = $newSection.find('h3');
+    let $eyecolor = $newSection.find('p');
 
     $name.text(value.name);
     $height.text(value.height);
-    $eyecolor.text(value.eye_color);
+    $eyeColor.text(value.eye_color);
 
 
-    $('main').append(template);
+    $('main').append($newSection);
   });
 };
 
@@ -70,9 +71,9 @@ For example, if the input is 'Welcome', the output will be:
 
 const howMuchPencil = (str) => {
   let result = [];
-  for (let i = 0; i < str.length; i++){
-    let sliced = str.slice(i);
-    result.push(sliced);
+  for (let i = 0; i < str.length + 1; i++) {
+    let remove = str.slice(i, str.length)
+    result.push(remove);
   }
   return result;
 };
@@ -220,7 +221,7 @@ Write a function named totalSumCSV that, given a string of comma-separated value
 
 const totalSumCSV = (str) => {
   let total = 0;
-  
+
   // Solution code here...
   return total;
 };
