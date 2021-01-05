@@ -83,7 +83,10 @@ const templatingWithMustache = () => {
   });
   return templateArr;
 };
+
 I do not have enough time to complete this today. 
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
