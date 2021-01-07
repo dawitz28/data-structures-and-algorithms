@@ -24,7 +24,7 @@ let starWarsPeople = [
     "height": "96",
     "eye_color": "red"
   }
-];
+]; 
 
 let $ = createSnippetWithJQuery(`
 <main>
@@ -40,11 +40,11 @@ const templateWithJQuery = () => {
   let $sectionTemplate = $('#template');
 
   starWarsPeople.forEach(value => {
-    let $newSection= 
-    $sectionTemplate.clone();
+    let $newSection =
+      $sectionTemplate.clone();
     let $name = $newSection.find('h2');
     let $height = $newSection.find('h3');
-    let $eyecolor = $newSection.find('p');
+    let $eyeColor = $newSection.find('p');
 
     $name.text(value.name);
     $height.text(value.height);
@@ -72,8 +72,8 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   for (let i = 0; i < str.length + 1; i++) {
-    let remove = str.slice(i, str.length)
-    result.push(remove);
+    let sliced  = str.slice(i);
+    result.push(sliced);
   }
   return result;
 };
@@ -86,12 +86,12 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-const wordsToCharList = (arr) => {
-  let newArr
-  for (let i = 0; i < str.length; i++){
-    newArr.push(str)
-    return ......
+const wordsToCharList = (str) => {
+  let newArr = [];
+  for (let i = 0; i < str.length; i++) {
+    newArr.push(str[i]);
   }
+  return newArr;
 };
 
 
@@ -138,11 +138,12 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  for (let i = 0; i < recipe.ingredients.length; i++){
-    let curren
-    let Space = recipe.ingredients[i].indexOf('');
-    let sliceWood = recipe.ingredients[i].slice(0, space)
-  }
+
+    recipe.ingredients.forEach(ingredient => {
+      let firstSpace = ingredient.indexOf(''); 
+      let secondSpace = ingredient.indexOf('',(firstSpace + 1));
+      result.push(ingredient.slice(secondSpace + 1));
+    });
   return result;
 };
 
@@ -298,13 +299,13 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return a list of foods', () => {
     expect(splitFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return a list of recipe steps', () => {
     expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
     expect(stepActions(gruffaloCrumble).length).toStrictEqual(9);
@@ -366,6 +367,6 @@ xdescribe('Testing challenge 11', () => {
 });
 
 
-function createSnippetWithJQuery(html){
+function createSnippetWithJQuery(html) {
   return cheerio.load(html);
 };
