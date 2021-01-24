@@ -1,5 +1,12 @@
 'use strict';
 
+ array-methods
+
+// 04
+
+
+
+main
 // to learn more about the cheerio library and what it is doing, look at their documentation: https://www.npmjs.com/package/cheerio
 const cheerio = require('cheerio');
 const Mustache = require('mustache');
@@ -84,10 +91,14 @@ const templatingWithMustache = () => {
   return templateArr;
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 I do not have enough time to complete this today. 
 =======
 
 >>>>>>> 0cddf0850a2f4fe650d183280d8708461e04cc26
+=======
+
+>>>>>>> fa4d4ef0db75d0f16cd5804c7790629cc360261c
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -136,7 +147,6 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let 
 
 };
 
