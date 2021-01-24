@@ -27,6 +27,7 @@ const createServer = () => {
 
   // Routes go here
   // Solution code here...
+app.get('/events' ,getCurrentEvents);
 
   var server = app.listen(3301, function () {
     var port = server.address().port;
@@ -161,14 +162,24 @@ const currentEvents = {
 
 function getCurrentEvents(request, response){
   // Solution code here...
+return response.send(currentEvents);
 }
+
 
 const mapCurrentEvents = () => {
   // Solution code here...
-}
+  const data = currentEvents.news.map(value => new Event(value)
+  ); 
+  return data;
+};
 
 function Event(obj){
-  // Solution code here...
+  this.author = obj.author;
+  this.categories = obj.categories;
+  this.summary = obj.summary;
+  this.img_url = obj.img_url;
+  this.date = obj.date;
+  this.title = obj.title;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -181,6 +192,11 @@ Note: You may not use the array's built-in length property.
 
 const countNumberOfElements = (arr) => {
   // Solution code here...
+  return arr.reduce((Numbers) => {
+    Numbers++;
+    return Numbers;
+
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -241,6 +257,10 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  return arr.reduce((charactersName, value) => {
+    charactersName.push(value.name);
+    return charactersName;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -253,6 +273,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  let string = str.split('');
+  let reversed = string.reduce((string , value )=>{
+    return value + string;
+  }, '');
+  return reversed;
 };
 
 /* ------------------------------------------------------------------------------------------------
