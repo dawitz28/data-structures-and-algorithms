@@ -91,9 +91,6 @@ const templatingWithMustache = () => {
   return templateArr;
 };
 
-I do not have enough time to complete this today. 
-
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -142,7 +139,6 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let 
 
 };
 
