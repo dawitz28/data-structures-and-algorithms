@@ -83,7 +83,11 @@ const templatingWithMustache = () => {
   });
   return templateArr;
 };
+<<<<<<< HEAD
 I do not have enough time to complete this today. 
+=======
+
+>>>>>>> 0cddf0850a2f4fe650d183280d8708461e04cc26
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
