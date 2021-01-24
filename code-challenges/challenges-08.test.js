@@ -104,7 +104,6 @@ const snorlaxData = {
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6 - Stretch Goal
 
@@ -116,7 +115,6 @@ For example, getStatName(snorlaxData.stats, 50) will return ['special-defense', 
 const getStatName = (arr, minBaseStat) => {
   // Solution code here...
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
