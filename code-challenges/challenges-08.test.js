@@ -46,13 +46,10 @@ The callback function to filter should include or utilize a regular expression p
 
 For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 'hound'].
 ------------------------------------------------------------------------------------------------ */
-
-
 const filterStringsWithVowels = (arr) => {
   const regex = /(a|e|i|o|u)/;
   return arr.filter(vo=>regex.test(vo));
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -64,7 +61,6 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 const notInFirstArray = (forbiddenValues, arr) => {
   return arr.filter(newValue=> !forbiddenValues.includes(newValue));
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -126,7 +122,6 @@ CHALLENGE 7 - Stretch Goal
 
 Write a function named getCharactersWithoutChildren that, given the array of characters, below, uses filter to return an array of all characters without children.
 ------------------------------------------------------------------------------------------------ */
-
 const characters = [
   {
     name: 'Eddard',
