@@ -11,7 +11,7 @@ Then, write a function named speaker that takes in a string and a callback funct
 const greeting = (word) => {
   // Solution code here...
   return word.toUpperCase();
-  }
+};
 
 const speaker = (message, callback) => {
   // Solution code here...
@@ -41,11 +41,10 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
-  for (let i = 0 ; i < times ; i++){
-    callback(arr,num);
+  for (let i = 0; i < times; i++) {
+    addValues(arr, num);
   }
   return arr;
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,29 +67,15 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
-  let List = [];
-  availableItems.forEach(value => {
-    if (value.available === true) {
-      shoppingList.push(value.name);
+  let inventoryList = [];
+  availableItems.forEach((element) => {
+    if (element.available){
+      inventoryList.push(element.name);
     }
-
   });
-  return shoppingList; 
+  return inventoryList;
 };
 
-//   let inventory = [];
-//   const createList = (availableItems) => {
-//     availableItems.forEach(item => {
-//       if(item.available === true){
-//         itemList.push(item.name);
-//       }
-//     }
-//     // return itemList;
-//   // });
-};
-
-
-    
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -107,17 +92,19 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
-};
-const fizzbuzz =(arr) => {
-  arr.forEach( item =>{
-    if (item % 3 === 0 && item % 5 === 0){
-      item = "Fizz Buzz";
-    }else if (item % 3 === 0){
-      item = "Fizz";
-    }else if (item % 5 === 0){
-      item = "Buzz";
+  let fizzbuzz = [];
+  arr.forEach((num) => {
+    if (num % 3 === 0 && num % 5 === 0) {
+      fizzbuzz.push('Fizz Buzz');
+    } else if  (num % 3 === 0) {
+      fizzbuzz.push('Fizz');
+    }else if (num % 5 === 0) {
+      fizzbuzz.push('Buzz');
+    }else {
+      fizzbuzz.push(num);
     }
-  })
+  });
+  return fizzbuzz;
 };
 
 /* ------------------------------------------------------------------------------------------------
