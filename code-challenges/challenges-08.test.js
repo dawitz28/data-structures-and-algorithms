@@ -47,12 +47,10 @@ The callback function to filter should include or utilize a regular expression p
 For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 'hound'].
 ------------------------------------------------------------------------------------------------ */
 
-
 const filterStringsWithVowels = (arr) => {
   const regex = /(a|e|i|o|u)/;
   return arr.filter(vo=>regex.test(vo));
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
