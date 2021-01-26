@@ -30,12 +30,14 @@ Write a function named sortBackwards that takes in an array of numbers and retur
 
 const sortBackwards = (arr) => {
   // Solution code here...
-  arr.sort((a, b) => {
+  arr.sort((a,b) => {
     if (a > b) {
       return -1;
+
     }else if (a < b) {
       return 1;
-    }else {
+
+    } else {
       return 0;
     }
   });
@@ -66,15 +68,15 @@ Write a function named sortByLength that takes in an array of strings and return
 const sortByLength = (arr) => {
   // Solution code here...
   arr.sort((a,b) => {
-    if (a.lenght > b.lenght) {
+    if (a.length > b.length) {
       return 1;
 
-    } else if (a.lenght < b.lenght) {
+    } else if (a.length < b.length) {
       return -1;
-      
+
     } else {
       return 0;
-    }
+    } 
   });
   return arr;
 };
