@@ -12,4 +12,4 @@ move end forwards by 1
 
 # Solution
 <!-- embedded whiteboard image -->
-![whiteBoard](./assets/whiteboard.png)
+![whiteBoard](../assets/whiteboard.png)
