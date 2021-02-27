@@ -17,3 +17,4 @@ if key is not found -  return -1
 <!-- embedded whiteboard image -->
 ![WhiteBoard](./assest/binarywhiteboard.jpeg)
 
+Reference https://medium.com/@pratikshya.pp19/binary-search-6d38365125b
