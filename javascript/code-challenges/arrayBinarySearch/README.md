@@ -15,6 +15,6 @@ if key is not found -  return -1
 
 # Solution
 <!-- embedded whiteboard image -->
-![WhiteBoard](./assest/binarywhiteboard.jpeg)
+![WhiteBoard](./assets/binarywhiteboard.jpeg)
 
 Reference https://medium.com/@pratikshya.pp19/binary-search-6d38365125b
