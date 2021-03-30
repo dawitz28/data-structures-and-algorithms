@@ -8,8 +8,11 @@
 - dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
 - The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor.
 
-
-
+# Approch and Efficiency 
+- enqueue space o(1) time 0(1)
+- dequeue space: space O(n^2) time : O(n^2) 
 
 <!-- embedded whiteboard image -->
 ![whiteBoard](assest/pseudo-queue.png )
+
+- for this Code Challenge I collaborated with Nassir Abegaz 
